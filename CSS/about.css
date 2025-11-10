@@ -1,0 +1,65 @@
+main > div {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+    main > div > h2 {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    main > div > p {
+        font-size: 18px;
+    }
+
+main > div > b {
+  color: black;
+  font-size: 18px;
+}
+
+main > div > b:hover {
+  background-color: grey;
+  color: #E3DFDE;
+}
+
+
+
+
+ #container2 {
+    grid-area: area2;
+  }
+
+#container3 {
+    grid-area: area3;
+  }
+
+
+main {
+    background-color: rgb(34, 55, 112);
+    display: grid;
+    grid-template-areas: 
+    '.'
+    'area2'
+    'area2'
+    'area3'
+    'area3'
+    'area3';
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+@media only screen and (min-width: 992px) {
+   
+    main {
+        grid-template-areas: 
+        '.     area3 .'
+        'area2 area3 .'
+        'area2 area3 .';
+    }
+    
+}
